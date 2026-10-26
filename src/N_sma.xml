@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/dict-sma.rnc" type="application/relax-ng-compact-syntax"?>
+<r id="dict-sma" xml:lang="sma">
+   <lics xml:lang="en" xml:space="preserve">
+      <lic>
+This code is made available under a Creative Commons Attribution license
+<a>https://creativecommons.org/licenses/by/4.0/</a>.
+
+You are free to copy, distribute and adapt the work, as long as you always give
+proper attribution using the attribution text below.
+
+For the full license text, see the link above.
+      </lic>
+      <ref>
+Work by The Centre for Sámi Lexicography, Giellatekno and Divvun at UiT,
+and members of the language communities. Source code
+available at <a>https://github.com/giellalt/dict-sme</a>.
+      </ref>
+      <sourcenote>
+THIS TEXT IS THE ORIGINAL SOURCE CODE. This is NOT a fully styled and
+published dictionary. As such it can and
+will contain unfinished entries, unpublished entries, entries with
+objectionable translations, etc. If you find any errors or want to add more
+words, download the file, edit it, and send it back to
+<a>mailto:feedback@divvun.no</a> and <a>mailto:giellatekno@uit.no</a>.
+Please also note that the entries are not necessarily sorted,
+or could be wrongly sorted.
+      </sourcenote>
+   </lics>
+   <e>
+      <lg pos="N">
+         <l>baernie</l>
+      </lg>
+      <dg id="a">
+         <d>gaarmanæjjamaana, ij leah geerve almetje</d>
+         <xg>
+            <x>Baernie jallh nïejte sjïdti?</x>
+         </xg>
+      </dg>
+      <dg id="b">
+         <d>eejhtegi gaarmanæjjamaana</d>
+         <xg>
+            <x>Gïen baernie, datne?</x>
+         </xg>
+      </dg>
+      <dg id="c">
+         <d>(noere) gaarmanæjjamïelehke</d>
+         <xg>
+            <x>Dagke orre baerniem åådtjeme giesien mænngan?</x>
+         </xg>
+      </dg>
+   </e>
+   <e>
+      <lg pos="N">
+         <l>gåeskie</l>
+      </lg>
+      <dg id="a">
+         <d>tjidtjien båarasåbpoe åabpa</d>
+      </dg>
+   </e>
+   <e>
+      <lg pos="N">
+         <l>jiekie</l>
+      </lg>
+      <dg id="a">
+         <d>aehtjien båarasåbpoe vïelle</d>
+      </dg>
+   </e>
+   <e>
+      <lg pos="N">
+         <l>jijmie</l>
+      </lg>
+      <dg id="a">
+         <d>nyjsenæjja gïe lea provres aehtjien jallh tjidtjien vïelline</d>
+      </dg>
+   </e>
+   <e>
+      <lg pos="N">
+         <l>jyöne</l>
+      </lg>
+      <dg id="a">
+         <d>tjidtjien vïelle</d>
+      </dg>
+   </e>
+   <e>
+      <lg pos="N">
+         <l>laevie</l>
+      </lg>
+      <dg id="a">
+         <d>aajkoelaevie, almetje gïe dov aajkoe-gåeskiej, aajkoe-muahraj, aajkoe-jyöni, aajkoe-jiekiej,
+         aajkoe-tjietsiej, aajkoe-seasaj maana</d>
+         <d>voesteslaevie</d>
+      </dg>
+      <dg id="b">
+         <d>voesteslaevie, almetje gïe dov gåeskiej, muahraj, jyöni, jiekiej, tjietsiej, seasaj maana</d>
+         <d>aajkoelaevie</d>
+      </dg>
+      <dg id="c">
+         <d>almetje, giejnie lea faelhkesne</d>
+      </dg>
+      <dg id="d">
+         <d>(saemien) voelpe</d>
+         <d>almetje gïe faepele jïh dåajmije</d>
+      </dg>
+   </e>
+   <e>
+      <lg pos="N">
+         <l>maake</l>
+      </lg>
+      <dg id="a">
+         <d>gaarmanæjja gïe lea provres seasine, muahrine jallh gåeskine, jallh provres aajkoe-seasine, aajkoe-muahrine
+         jallh aajkoe-gåeskine jallh lea provres jeatjah båarasåbpoe gyjne- maadtoeladtjigujmie</d>
+         <d>gaarmanaæjja gïe lea provres båarasåbpoe åabpine</d>
+      </dg>
+   </e>
+   <e>
+      <lg pos="N">
+         <l>muahra</l>
+      </lg>
+      <dg id="a">
+         <d>tjidtjien nuerebe åabpa</d>
+      </dg>
+   </e>
+   <e>
+      <lg pos="N">
+         <l>nyjsenæjja</l>
+      </lg>
+      <dg id="a">
+         <d>nïejte gie geerve almetjinie sjïdteme</d>
+         <d>ij leah gaarmanæjja</d>
+         <xg>
+            <x>Vihkele dovne nyjsenæjjide jïh gaarmanæjjide.</x>
+         </xg>
+      </dg>
+   </e>
+   <e>
+      <lg pos="N">
+         <l>gaarmanæjja</l>
+      </lg>
+      <dg id="a">
+         <d>baernie gie geerve almetjinie sjïdteme</d>
+         <d>ij leah nyjsenæjja</d>
+         <xg>
+            <x>Vihkele dovne nyjsenæjjide jïh gaarmanæjjide.</x>
+         </xg>
+      </dg>
+   </e>
+   <e>
+      <lg pos="N">
+         <l>nïejte</l>
+      </lg>
+      <dg id="a">
+         <d>nyjsenemaana, ij leah geerve almetje</d>
+         <xg>
+            <x>Baernie jallh nïejte sjïdti?</x>
+         </xg>
+      </dg>
+      <dg id="b">
+         <d>eejhtegi nyjsenemaana</d>
+         <xg>
+            <x>Biejjien nïejte.</x>
+            <x>Gïen nïejte, datne?</x>
+         </xg>
+      </dg>
+      <dg id="c">
+         <d>(noere) nyjsenemielehke</d>
+         <xg>
+            <x>Dagke orre nïejtem åådtjeme giesien mænngan?</x>
+         </xg>
+      </dg>
+   </e>
+   <e>
+      <lg pos="N">
+         <l>tjietsie</l>
+      </lg>
+      <dg id="a">
+         <d>aehtjien nuerebe vïelle</d>
+      </dg>
+   </e>
+</r>

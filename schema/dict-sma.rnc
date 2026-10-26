@@ -1,0 +1,106 @@
+datatypes xsd = "http://www.w3.org/2001/XMLSchema-datatypes"
+
+start = r
+
+# variables
+pos.values = "A" | "N" | "V" | "Adv" | "Po" | "Pr" | "Pron" | "Phrase"
+    | "Interj" | "Pcle" | "Num" | "CC" | "CS" 
+type.values = "Rel" | "Pers" | "Indef" | "Refl" | "Dem" | "TV" | "IV"
+    | "Ord" | "Prop" | "Recipr" | "Coll" | "Interr" | "Logo"
+class.values = "I" | "II" | "III" | "IV" | "V" | "VI" | "xxx"
+
+# root and header
+r = element r {
+    attribute id { "dict-sma" },
+    attribute xml:lang { "sma" },
+    lics?,
+    e+
+}
+
+lics = element lics {
+    attribute xml:lang { "en" },
+    attribute xml:space { "default" | "preserve" }?,
+    lic,
+    ref*,
+    sourcenote*
+}
+
+lic = element lic {  mixed { a* } }
+ref = element ref { mixed { a* } }
+sourcenote = element sourcenote { mixed { a* } }
+a = element a { text }
+
+# entry
+# batch: the batch the entry is in, see batches.xml
+e = element e {
+    lg,
+    dg*,
+    ig*,
+    cg?
+}
+
+# lemma group
+# pos is the same for all variants of a lemma
+lg =
+  element lg {
+    attribute pos { pos.values },
+    l+
+  }
+
+# lemma
+l = element l {
+    attribute class { class.values }?,
+    attribute type { type.values }?,
+    attribute hid { xsd:positiveInteger }?,
+    text
+}
+
+# definiton group
+dg = element dg {
+    attribute id { text }?,
+    d+,
+    syng?,
+    antg?,
+    xg*
+}
+
+# definition
+d = element d { mixed { d_ref* } }
+
+# link to another entry, or to one of its definition groups (dg_id); in a
+# definition, and as the synonyms and antonyms in syng and antg.
+d_ref = element d_ref {
+    attribute lemma { text },
+    attribute pos { pos.values },
+    attribute type { type.values }?,
+    attribute hid { xsd:positiveInteger }?,
+    attribute dg_id { text }?,
+    text
+}
+
+# synonyms and antonyms: each one is a link to the entry, or to one
+# definition group (dg_id), that is the synonym or antonym
+syng = element syng { d_ref+ }
+antg = element antg { d_ref+ }
+
+# example group
+xg = element xg {
+    element x { text }+
+}
+
+
+# idiom group
+# i = idiom, idg = idiom definition group, id = idiom definition, ix = idiom example
+ig = element ig {
+    element i { text },
+    element idg {
+        element id { text },
+        element ix { text }*
+    }*
+}
+
+
+# comments
+cg = element cg {
+    element c {text}+
+}
