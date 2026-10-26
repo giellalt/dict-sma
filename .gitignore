@@ -59,3 +59,19 @@ m4/lt~obsolete.m4
 
 # bin dir for generated fst's:
 /bin
+
+# python temp files
+__pycache__/
+
+# PDF exports from batch2pdf.py (in the XXE add-on, giella-dict-xxe)
+/pdf/
+
+# lists made by the scripts of the XXE add-on (giella-dict-xxe)
+/.xxe/
+
+# python virtual envs
+.venv/
+.python-verison
+.env/
+venv/
+env/
